@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: br-business-almproduct
+apollo:
+  bootstrap:
+    eagerLoad:
+      enabled: true
+    enabled: true
+    namespaces: sk-common.yaml,br-business-almproduct.yaml
+  meta: http://apollo-configservice-dev.paas-pro.haier.net
+app:
+  id: S00467
+project:
+  name: br-business-almproduct

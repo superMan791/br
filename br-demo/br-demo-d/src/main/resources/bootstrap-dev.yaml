@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: bbr-demo-d
+apollo:
+  bootstrap:
+    eagerLoad:
+      enabled: true
+    enabled: true
+    namespaces: sk-common.yaml,br-demo-d.yaml
+  meta: http://apollo-configservice-dev.paas-pro.haier.net
+app:
+  id: s02093
+project:
+  name: br-demo-d

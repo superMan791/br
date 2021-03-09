@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: br-demo-d
+apollo:
+  bootstrap:
+    eagerLoad:
+      enabled: true
+    enabled: true
+    namespaces: sk-common.yaml,br-demo-d.yaml
+  meta: http://apollo-configservice.paas-pro.haier.net
+app:
+  id: s02093
+project:
+  name: br-demo-d
+xxl:
+  job:
+    admin:
+      #addresses: http://job-admin.paas-sit.haier.net/job-admin/
+      #addresses: http://192.168.10.252:8099/xxl-job-admin/
+      addresses: http://job-admin.paas-sit.haier.net/job-admin
+    executor:
+      address:
+      appname: ${spring.application.name}
+      ip:
+      port: 9002
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: 30
+      ### xxl-job, access token
+    accessToken:
+  update:
+    url: http://job-admin.paas-sit.haier.net/job-admin/jobinfo/remoteUpdate
+    platCode: s02093
